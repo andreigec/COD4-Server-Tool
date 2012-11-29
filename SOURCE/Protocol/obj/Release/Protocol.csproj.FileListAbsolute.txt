@@ -1,0 +1,12 @@
+E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Release\Protocol.dll
+E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Release\Protocol.pdb
+E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Release\ResolveAssemblyReference.cache
+E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Release\Protocol.dll
+E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Release\Protocol.pdb
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Release\Protocol.dll
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Release\Protocol.pdb
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Release\Protocol.dll
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Release\Protocol.pdb
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Release\Protocol.csprojResolveAssemblyReference.cache
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Release\ANDREICSLIB.dll
+C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Release\ICSharpCode.SharpZipLib.dll

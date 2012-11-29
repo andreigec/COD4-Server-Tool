@@ -1,0 +1,1889 @@
+
+block
+IP Address:75.102.38.104
+Port:28960
+Host Name:]R[enegades Modern Weapons
+Map Name:mp_arkona
+Max Clients:20
+Game Type:sd
+Punk Buster?:1
+Ping:259
+
+block
+
+block
+IP Address:109.63.63.79
+Port:28960
+
+block
+
+block
+IP Address:46.48.31.52
+Port:28960
+Host Name:[DS] #1 Original
+Map Name:mp_crossfire
+Max Clients:23
+Game Type:war
+Max Ping:210
+Punk Buster?:1
+Ping:408
+
+block
+
+block
+IP Address:109.70.63.71
+Port:2304
+
+block
+
+block
+IP Address:63.110.63.73
+Port:28959
+
+block
+
+block
+IP Address:77.111.63.63
+Port:26943
+
+block
+
+block
+IP Address:95.63.63.63
+Port:28223
+
+block
+
+block
+IP Address:63.96.63.63
+Port:28961
+
+block
+
+block
+IP Address:88.63.63.41
+Port:27965
+
+block
+
+block
+IP Address:93.63.11.63
+Port:28961
+
+block
+
+block
+IP Address:109.63.20.9
+Port:28960
+
+block
+
+block
+IP Address:80.77.63.99
+Port:28969
+
+block
+
+block
+IP Address:80.77.63.99
+Port:28961
+
+block
+
+block
+IP Address:63.63.63.101
+Port:28993
+
+block
+
+block
+IP Address:94.63.63.48
+Port:28960
+
+block
+
+block
+IP Address:78.46.105.69
+Port:28735
+
+block
+
+block
+IP Address:75.102.39.48
+Port:28960
+Host Name:aaaaaSCS OW HC Custom Weapons/Maps Tactical
+Map Name:mp_mtl_havoc
+Max Clients:32
+Game Type:sd
+Punk Buster?:1
+Ping:264
+
+block
+
+block
+IP Address:63.117.63.32
+Port:25407
+
+block
+
+block
+IP Address:62.75.63.115
+Port:9999
+
+block
+
+block
+IP Address:85.114.63.68
+Port:32000
+
+block
+
+block
+IP Address:85.63.14.63
+Port:28960
+
+block
+
+block
+IP Address:27.50.71.19
+Port:28930
+Host Name:Power Rangerz Scrim Server
+Map Name:mp_crash
+Max Clients:14
+Game Type:sd
+Punk Buster?:1
+Ping:41
+
+block
+
+block
+IP Address:46.63.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.121.63
+Port:32002
+
+block
+
+block
+IP Address:46.105.122.90
+Port:28960
+Host Name:24/7/Crash TDM
+Map Name:mp_crash
+Max Clients:32
+Game Type:war
+Max Ping:250
+Punk Buster?:1
+Ping:324
+
+block
+
+block
+IP Address:63.63.63.63
+Port:28970
+
+block
+
+block
+IP Address:8.3.28.55
+Port:28960
+Host Name:Another GameServers.com Server
+Map Name:mp_bog
+Max Clients:20
+Game Type:dm
+Max Ping:350
+Punk Buster?:1
+Ping:238
+
+block
+
+block
+IP Address:89.31.94.63
+Port:28960
+
+block
+
+block
+IP Address:109.70.63.43
+Port:28934
+
+block
+
+block
+IP Address:63.9.19.117
+Port:29000
+
+block
+
+block
+IP Address:5.9.48.63
+Port:28960
+
+block
+
+block
+IP Address:93.63.11.63
+Port:28962
+
+block
+
+block
+IP Address:89.31.111.2
+Port:28965
+Host Name:??????? ???? ????^0!!!
+Map Name:mp_crossfire
+Max Clients:18
+Game Type:sd
+Max Ping:999
+Punk Buster?:0
+Ping:435
+
+block
+
+block
+IP Address:78.46.59.55
+Port:28931
+Host Name:Promod Sniper only
+Map Name:mp_shipment
+Max Clients:18
+Game Type:dm
+Punk Buster?:1
+Ping:347
+
+block
+
+block
+IP Address:80.77.63.100
+Port:28962
+
+block
+
+block
+IP Address:63.63.127.105
+Port:28960
+
+block
+
+block
+IP Address:84.63.0.123
+Port:28960
+
+block
+
+block
+IP Address:63.93.63.33
+Port:16191
+
+block
+
+block
+IP Address:63.37.63.4
+Port:28960
+
+block
+
+block
+IP Address:85.63.102.73
+Port:29460
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.14.80
+Port:28964
+
+block
+
+block
+IP Address:27.50.71.63
+Port:28931
+
+block
+
+block
+IP Address:63.63.63.63
+Port:28990
+
+block
+
+block
+IP Address:63.63.58.63
+Port:1337
+
+block
+
+block
+IP Address:63.63.58.63
+Port:1345
+
+block
+
+block
+IP Address:63.63.78.63
+Port:28960
+
+block
+
+block
+IP Address:91.63.63.114
+Port:28960
+
+block
+
+block
+IP Address:91.63.104.63
+Port:28967
+
+block
+
+block
+IP Address:94.23.63.63
+Port:28974
+
+block
+
+block
+IP Address:37.59.44.63
+Port:28960
+
+block
+
+block
+IP Address:62.67.42.20
+Port:28960
+Host Name:*PK*Painkiller noTubes
+Map Name:mp_bog
+Max Clients:24
+Game Type:war
+Punk Buster?:0
+Ping:329
+
+block
+
+block
+IP Address:63.57.63.23
+Port:28960
+
+block
+
+block
+IP Address:63.4.104.63
+Port:28960
+
+block
+
+block
+IP Address:8.6.75.56
+Port:28960
+Host Name:SoU|THEEVILDEAD
+Map Name:mp_pillar
+Clients:3
+Max Clients:8
+Game Type:elim
+Punk Buster?:0
+Ping:233
+
+block
+
+block
+IP Address:62.63.42.63
+Port:28991
+
+block
+
+block
+IP Address:63.26.30.63
+Port:28961
+
+block
+
+block
+IP Address:84.63.49.27
+Port:26943
+
+block
+
+block
+IP Address:62.75.63.63
+Port:14399
+
+block
+
+block
+IP Address:109.63.63.47
+Port:28960
+
+block
+
+block
+IP Address:91.121.80.44
+Port:2305
+
+block
+
+block
+IP Address:91.63.53.63
+Port:29037
+
+block
+
+block
+IP Address:63.63.63.63
+Port:27711
+
+block
+
+block
+IP Address:63.63.63.18
+Port:28960
+
+block
+
+block
+IP Address:66.55.63.63
+Port:28960
+
+block
+
+block
+IP Address:77.21.63.63
+Port:28990
+
+block
+
+block
+IP Address:78.63.2.63
+Port:28960
+
+block
+
+block
+IP Address:109.63.63.4
+Port:28945
+
+block
+
+block
+IP Address:63.14.63.63
+Port:28930
+
+block
+
+block
+IP Address:27.50.71.63
+Port:28930
+
+block
+
+block
+IP Address:88.63.1.63
+Port:1024
+
+block
+
+block
+IP Address:63.63.63.3
+Port:28960
+
+block
+
+block
+IP Address:46.4.36.76
+Port:28961
+Host Name:&^0CB # ^0Warserver
+Map Name:mp_citystreets
+Max Clients:20
+Game Type:sd
+Punk Buster?:1
+Ping:349
+
+block
+
+block
+IP Address:46.4.23.86
+Port:27410
+Host Name:YCN-Hosting.com | Mokkamann
+Map Name:mp_backlot
+Max Clients:10
+Game Type:sd
+Punk Buster?:1
+Ping:348
+
+block
+
+block
+IP Address:67.63.102.63
+Port:28960
+
+block
+
+block
+IP Address:81.19.63.63
+Port:2304
+
+block
+
+block
+IP Address:63.9.84.41
+Port:28973
+
+block
+
+block
+IP Address:37.114.109.94
+Port:28960
+Host Name:Suicide||Promod War
+Map Name:mp_crossfire
+Max Clients:16
+Game Type:sd
+Punk Buster?:1
+Ping:346
+
+block
+
+block
+IP Address:81.11.63.27
+Port:28963
+
+block
+
+block
+IP Address:63.63.24.13
+Port:29975
+
+block
+
+block
+IP Address:85.14.63.64
+Port:28960
+
+block
+
+block
+IP Address:109.70.63.49
+Port:28937
+
+block
+
+block
+IP Address:63.63.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.9.39.61
+Port:11839
+
+block
+
+block
+IP Address:64.120.63.19
+Port:28960
+
+block
+
+block
+IP Address:85.114.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.63.63
+Port:28963
+
+block
+
+block
+IP Address:5.104.104.122
+Port:28960
+Host Name:Unrated Gaming Promod Match Server #1
+Map Name:mp_strike
+Max Clients:12
+Game Type:sd
+Punk Buster?:1
+Ping:329
+
+block
+
+block
+IP Address:46.37.2.63
+Port:29000
+
+block
+
+block
+IP Address:82.98.63.12
+Port:28965
+
+block
+
+block
+IP Address:85.114.63.40
+Port:28960
+
+block
+
+block
+IP Address:95.63.124.63
+Port:28962
+
+block
+
+block
+IP Address:63.53.63.40
+Port:28960
+
+block
+
+block
+IP Address:31.63.1.63
+Port:28960
+
+block
+
+block
+IP Address:50.63.98.11
+Port:28960
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28935
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28943
+
+block
+
+block
+IP Address:63.63.63.63
+Port:28930
+
+block
+
+block
+IP Address:78.46.61.63
+Port:28223
+
+block
+
+block
+IP Address:89.63.63.50
+Port:28964
+
+block
+
+block
+IP Address:63.63.63.63
+Port:16191
+
+block
+
+block
+IP Address:63.63.58.63
+Port:29971
+
+block
+
+block
+IP Address:63.63.58.63
+Port:29963
+
+block
+
+block
+IP Address:31.63.63.8
+Port:30000
+
+block
+
+block
+IP Address:81.30.63.84
+Port:28960
+
+block
+
+block
+IP Address:94.76.63.62
+Port:28950
+
+block
+
+block
+IP Address:62.63.55.63
+Port:28960
+
+block
+
+block
+IP Address:93.63.11.63
+Port:28963
+
+block
+
+block
+IP Address:68.63.63.42
+Port:28960
+
+block
+
+block
+IP Address:62.63.53.63
+Port:28960
+
+block
+
+block
+IP Address:63.19.108.63
+Port:24895
+
+block
+
+block
+IP Address:63.63.63.100
+Port:28930
+
+block
+
+block
+IP Address:109.70.63.18
+Port:28930
+
+block
+
+block
+IP Address:63.65.3.36
+Port:28970
+
+block
+
+block
+IP Address:63.63.80.63
+Port:28930
+
+block
+
+block
+IP Address:63.63.73.63
+Port:28930
+
+block
+
+block
+IP Address:62.63.63.90
+Port:28991
+
+block
+
+block
+IP Address:83.63.117.117
+Port:28962
+
+block
+
+block
+IP Address:63.65.3.30
+Port:28930
+
+block
+
+block
+IP Address:63.65.3.30
+Port:28970
+
+block
+
+block
+IP Address:46.4.17.63
+Port:32005
+
+block
+
+block
+IP Address:80.77.63.115
+Port:28964
+
+block
+
+block
+IP Address:62.63.53.63
+Port:28970
+
+block
+
+block
+IP Address:62.63.53.63
+Port:28930
+
+block
+
+block
+IP Address:68.63.63.63
+Port:28960
+
+block
+
+block
+IP Address:75.74.63.26
+Port:28960
+
+block
+
+block
+IP Address:89.63.116.22
+Port:28960
+
+block
+
+block
+IP Address:5.63.32.63
+Port:16191
+
+block
+
+block
+IP Address:8.6.15.95
+Port:28960
+Host Name:Clowns Crossfire TDM!
+Map Name:mp_crossfire
+Clients:17
+Max Clients:31
+Game Type:war
+Max Ping:290
+Punk Buster?:0
+Ping:231
+
+block
+
+block
+IP Address:109.126.1.46
+Port:28980
+
+block
+
+block
+IP Address:81.19.63.106
+Port:2304
+
+block
+
+block
+IP Address:77.63.63.63
+Port:28960
+
+block
+
+block
+IP Address:80.77.63.102
+Port:28966
+
+block
+
+block
+IP Address:46.4.17.63
+Port:29960
+
+block
+
+block
+IP Address:63.63.71.58
+Port:28479
+
+block
+
+block
+IP Address:63.65.3.27
+Port:28970
+
+block
+
+block
+IP Address:5.9.54.63
+Port:28960
+
+block
+
+block
+IP Address:8.12.17.100
+Port:28960
+Host Name:SECTION8CLAN NO MARTYRDOM
+Map Name:mp_backlot
+Max Clients:22
+Game Type:war
+Max Ping:350
+Punk Buster?:0
+Ping:262
+
+block
+
+block
+IP Address:63.65.3.28
+Port:28983
+
+block
+
+block
+IP Address:63.2.97.63
+Port:28963
+
+block
+
+block
+IP Address:93.63.13.63
+Port:28964
+
+block
+
+block
+IP Address:8.3.6.63
+Port:28930
+
+block
+
+block
+IP Address:85.63.2.63
+Port:28960
+
+block
+
+block
+IP Address:85.114.63.68
+Port:32003
+
+block
+
+block
+IP Address:80.77.63.100
+Port:28963
+
+block
+
+block
+IP Address:85.21.90.22
+Port:28960
+Host Name:Corbina.ru #4 HARD TDM
+Map Name:mp_countdown
+Max Clients:32
+Game Type:war
+Punk Buster?:1
+Ping:406
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28934
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28942
+
+block
+
+block
+IP Address:63.65.3.26
+Port:28960
+
+block
+
+block
+IP Address:63.40.127.63
+Port:27170
+
+block
+
+block
+IP Address:89.63.127.63
+Port:28960
+
+block
+
+block
+IP Address:88.63.63.16
+Port:28960
+
+block
+
+block
+IP Address:63.63.63.9
+Port:28991
+
+block
+
+block
+IP Address:77.63.63.119
+Port:28960
+
+block
+
+block
+IP Address:85.21.90.19
+Port:28960
+Host Name:Beeline.ru #SABOTAGE 2
+Map Name:mp_bloc
+Max Clients:24
+Game Type:sab
+Punk Buster?:1
+Ping:401
+
+block
+
+block
+IP Address:93.63.11.63
+Port:28964
+
+block
+
+block
+IP Address:80.77.63.98
+Port:28964
+
+block
+
+block
+IP Address:5.9.54.63
+Port:28961
+
+block
+
+block
+IP Address:8.3.7.39
+Port:28930
+Host Name:Shotguns-Pistols Only
+Map Name:mp_cargoship
+Clients:6
+Max Clients:12
+Game Type:dm
+Max Ping:250
+Punk Buster?:1
+Ping:187
+
+block
+
+block
+IP Address:62.63.63.90
+Port:28990
+
+block
+
+block
+IP Address:95.63.20.77
+Port:28960
+
+block
+
+block
+IP Address:91.63.94.2
+Port:16191
+
+block
+
+block
+IP Address:63.32.37.63
+Port:16191
+
+block
+
+block
+IP Address:63.79.63.63
+Port:32017
+
+block
+
+block
+IP Address:63.79.63.63
+Port:32009
+
+block
+
+block
+IP Address:63.76.63.26
+Port:28960
+
+block
+
+block
+IP Address:24.0.7.63
+Port:28960
+
+block
+
+block
+IP Address:109.126.1.46
+Port:28981
+Host Name:VLGames.ru COD4 ClanWar v1.2
+Map Name:mp_overgrown
+Max Clients:12
+Game Type:sd
+Max Ping:400
+Punk Buster?:0
+Ping:495
+
+block
+
+block
+IP Address:46.4.17.63
+Port:29961
+
+block
+
+block
+IP Address:63.119.63.63
+Port:28961
+
+block
+
+block
+IP Address:63.65.3.28
+Port:28980
+
+block
+
+block
+IP Address:109.63.111.42
+Port:28961
+
+block
+
+block
+IP Address:66.55.63.63
+Port:28930
+
+block
+
+block
+IP Address:63.65.10.63
+Port:28970
+
+block
+
+block
+IP Address:109.63.20.9
+Port:28930
+
+block
+
+block
+IP Address:85.114.63.68
+Port:32002
+
+block
+
+block
+IP Address:63.65.3.37
+Port:28930
+
+block
+
+block
+IP Address:63.65.3.37
+Port:28970
+
+block
+
+block
+IP Address:80.77.63.100
+Port:28968
+
+block
+
+block
+IP Address:109.63.63.124
+Port:10035
+
+block
+
+block
+IP Address:109.70.63.49
+Port:28931
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28945
+
+block
+
+block
+IP Address:109.70.63.63
+Port:28937
+
+block
+
+block
+IP Address:63.63.58.63
+Port:29961
+
+block
+
+block
+IP Address:89.63.127.63
+Port:28961
+
+block
+
+block
+IP Address:46.63.63.63
+Port:28520
+
+block
+
+block
+IP Address:63.13.62.30
+Port:26943
+
+block
+
+block
+IP Address:63.122.63.63
+Port:28960
+
+block
+
+block
+IP Address:66.63.121.76
+Port:28960
+
+block
+
+block
+IP Address:63.63.63.82
+Port:28960
+
+block
+
+block
+IP Address:67.63.76.63
+Port:28960
+
+block
+
+block
+IP Address:66.63.63.19
+Port:28960
+
+block
+
+block
+IP Address:109.70.63.49
+Port:28934
+
+block
+
+block
+IP Address:93.63.64.63
+Port:30000
+
+block
+
+block
+IP Address:69.28.63.63
+Port:28960
+
+block
+
+block
+IP Address:109.70.63.49
+Port:28936
+
+block
+
+block
+IP Address:64.74.97.63
+Port:28960
+
+block
+
+block
+IP Address:89.63.6.5
+Port:28962
+
+block
+
+block
+IP Address:94.23.63.63
+Port:28975
+
+block
+
+block
+IP Address:63.63.75.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.104.57
+Port:27967
+
+block
+
+block
+IP Address:63.63.72.63
+Port:28930
+
+block
+
+block
+IP Address:81.19.63.63
+Port:2309
+
+block
+
+block
+IP Address:63.63.73.63
+Port:28960
+
+block
+
+block
+IP Address:81.30.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.9.104.63
+Port:28735
+
+block
+
+block
+IP Address:68.63.63.83
+Port:28960
+
+block
+
+block
+IP Address:108.61.63.63
+Port:28960
+
+block
+
+block
+IP Address:70.42.74.63
+Port:28930
+
+block
+
+block
+IP Address:78.46.105.69
+Port:28991
+
+block
+
+block
+IP Address:69.28.63.11
+Port:28960
+
+block
+
+block
+IP Address:96.8.113.63
+Port:28960
+
+block
+
+block
+IP Address:63.9.63.63
+Port:28999
+
+block
+
+block
+IP Address:93.63.63.58
+Port:28971
+
+block
+
+block
+IP Address:77.111.63.115
+Port:28960
+
+block
+
+block
+IP Address:63.87.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.26.63
+Port:28960
+
+block
+
+block
+IP Address:63.33.63.58
+Port:28960
+
+block
+
+block
+IP Address:69.28.63.34
+Port:28960
+
+block
+
+block
+IP Address:70.42.74.17
+Port:28930
+Host Name:/KoS/ CROSSFIRE
+Map Name:mp_crossfire
+Clients:5
+Max Clients:50
+Game Type:war
+Max Ping:500
+Punk Buster?:0
+Ping:262
+
+block
+
+block
+IP Address:63.63.20.49
+Port:28930
+
+block
+
+block
+IP Address:63.63.63.112
+Port:28930
+
+block
+
+block
+IP Address:62.67.42.63
+Port:28960
+Host Name:M.A.D House Warzone
+Map Name:mp_convoy
+Max Clients:10
+Game Type:dm
+Max Ping:450
+Punk Buster?:0
+Ping:325
+
+block
+
+block
+IP Address:63.63.63.83
+Port:4096
+
+block
+
+block
+IP Address:80.82.16.67
+Port:28735
+
+block
+
+block
+IP Address:95.63.38.104
+Port:28980
+
+block
+
+block
+IP Address:95.63.38.101
+Port:28980
+
+block
+
+block
+IP Address:79.63.63.44
+Port:28735
+
+block
+
+block
+IP Address:81.19.63.60
+Port:28930
+
+block
+
+block
+IP Address:68.63.63.117
+Port:28960
+
+block
+
+block
+IP Address:94.23.63.63
+Port:28985
+
+block
+
+block
+IP Address:62.67.42.74
+Port:28960
+Host Name:Another GameServers.com Server
+Map Name:mp_vacant
+Max Clients:10
+Game Type:dm
+Max Ping:350
+Punk Buster?:1
+Ping:327
+
+block
+
+block
+IP Address:85.63.63.72
+Port:1024
+
+block
+
+block
+IP Address:63.63.23.108
+Port:28960
+
+block
+
+block
+IP Address:108.61.21.94
+Port:28936
+Host Name:KILLHOUSE HC 24/7-NO MARTY/GRENADE LAUNCHERS
+Map Name:mp_killhouse
+Clients:35
+Max Clients:45
+Game Type:war
+Punk Buster?:0
+Ping:285
+
+block
+
+block
+IP Address:69.28.63.82
+Port:28960
+
+block
+
+block
+IP Address:81.19.63.116
+Port:2304
+
+block
+
+block
+IP Address:91.63.63.12
+Port:26202
+
+block
+
+block
+IP Address:68.63.63.113
+Port:28960
+
+block
+
+block
+IP Address:78.46.59.55
+Port:28934
+Host Name:FFA LOW PING NO LAG
+Map Name:mp_vacant
+Max Clients:30
+Game Type:dm
+Punk Buster?:1
+Ping:347
+
+block
+
+block
+IP Address:81.19.63.109
+Port:2308
+
+block
+
+block
+IP Address:66.55.63.5
+Port:28930
+
+block
+
+block
+IP Address:63.63.63.82
+Port:4096
+
+block
+
+block
+IP Address:8.6.75.97
+Port:28960
+Host Name:TEST
+Map Name:mp_ancient_ultimate
+Max Clients:10
+Game Type:war
+Max Ping:300
+Punk Buster?:0
+Ping:220
+
+block
+
+block
+IP Address:94.23.63.63
+Port:28970
+
+block
+
+block
+IP Address:108.63.63.55
+Port:28960
+
+block
+
+block
+IP Address:68.63.63.86
+Port:28960
+
+block
+
+block
+IP Address:69.90.34.16
+Port:28960
+Host Name:CHECK |LTS| HARDCORE
+Map Name:mp_crash_snow
+Max Clients:26
+Game Type:dm
+Max Ping:450
+Punk Buster?:1
+Ping:269
+
+block
+
+block
+IP Address:68.63.63.66
+Port:28960
+
+block
+
+block
+IP Address:80.77.63.98
+Port:28962
+
+block
+
+block
+IP Address:8.6.15.96
+Port:28930
+Host Name:|DSA|OPEN WARFARE2v1.3
+Map Name:mp_mtl_havoc
+Max Clients:20
+Game Type:war
+Punk Buster?:0
+Ping:178
+
+block
+
+block
+IP Address:41.79.63.22
+Port:28930
+
+block
+
+block
+IP Address:80.63.63.75
+Port:28961
+
+block
+
+block
+IP Address:8.6.75.51
+Port:28960
+Host Name:ThisIsDEAJUMP/FFA
+Map Name:mp_backlot
+Max Clients:18
+Game Type:dm
+Max Ping:350
+Punk Buster?:1
+Ping:276
+
+block
+
+block
+IP Address:109.70.63.75
+Port:2304
+
+block
+
+block
+IP Address:95.63.38.101
+Port:29010
+
+block
+
+block
+IP Address:94.76.63.6
+Port:2306
+
+block
+
+block
+IP Address:63.33.63.63
+Port:28960
+
+block
+
+block
+IP Address:63.63.20.27
+Port:28930
+
+block
+
+block
+IP Address:70.42.74.55
+Port:28930
+Host Name:/KoS/ CRASH 24/7
+Map Name:mp_crash_snow
+Clients:1
+Max Clients:50
+Game Type:war
+Max Ping:500
+Punk Buster?:0
+Ping:266
+
+block
+
+block
+IP Address:94.23.63.63
+Port:28995
+
+block
+
+block
+IP Address:5.9.8.13
+Port:28962
+Host Name:Codename Gaming Server #2 [GameHosting.it]
+Map Name:mp_shipment
+Max Clients:12
+Game Type:war
+Punk Buster?:1
+Ping:348
+
+block
+
+block
+IP Address:80.82.41.63
+Port:28962
+
+block
+
+block
+IP Address:66.63.121.63
+Port:28930
+
+block
+
+block
+IP Address:63.63.80.101
+Port:26943
+
+block
+
+block
+IP Address:68.63.63.110
+Port:28960
+
+block
+
+block
+IP Address:63.63.0.26
+Port:28960
+
+block
+
+block
+IP Address:69.28.63.32
+Port:28960
+
+block
+
+block
+IP Address:108.61.21.94
+Port:28930
+Host Name:F|A NO MARTY ABNERDOG's DOGHOUSE - FEARLESS ASSASSINS
+Map Name:mp_vacant
+Clients:35
+Max Clients:45
+Game Type:war
+Punk Buster?:1
+Ping:279
+
+block
+
+block
+IP Address:8.6.75.101
+Port:28960
+Host Name:CoMoPeIl
+Map Name:mp_broadcast
+Max Clients:10
+Game Type:dom
+Max Ping:500
+Punk Buster?:0
+Ping:263
+
+block
+
+block
+IP Address:63.63.110.42
+Port:28960
+
+block
+
+block
+IP Address:63.63.63.103
+Port:28960
+
+block
+
+block
+IP Address:5.63.106.66
+Port:28960
+
+block
+
+block
+IP Address:63.63.63.81
+Port:4096
+
+block
+
+block
+IP Address:37.63.63.63
+Port:28960
+
+block
+
+block
+IP Address:94.76.63.6
+Port:2307
+
+block
+
+block
+IP Address:37.114.59.16
+Port:16191
+
+block
+
+block
+IP Address:69.63.63.51
+Port:28961
+
+block
