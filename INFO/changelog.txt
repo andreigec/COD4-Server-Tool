@@ -1,7 +1,0 @@
-Version 1.1
--Added auto updater
--Can optionally scan all servers from master automatically on load
--Added colours for filters that have removed items
-
-Version 1
--Initial Release

@@ -51,6 +51,7 @@ namespace Cod4ServerTool
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshServerOnSelect = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoscan = new System.Windows.Forms.ToolStripMenuItem();
             this.nofilters = new System.Windows.Forms.ToolStripMenuItem();
             this.noservers = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -75,7 +76,6 @@ namespace Cod4ServerTool
             this.inactivecheck = new System.Windows.Forms.CheckBox();
             this.favouritecheck = new System.Windows.Forms.CheckBox();
             this.filterpanel = new System.Windows.Forms.Panel();
-            this.autoscan = new System.Windows.Forms.ToolStripMenuItem();
             this.scanselected = new System.Windows.Forms.Button();
             this.iprightclickcontext.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -216,6 +216,15 @@ namespace Cod4ServerTool
             this.refreshServerOnSelect.Name = "refreshServerOnSelect";
             this.refreshServerOnSelect.Size = new System.Drawing.Size(231, 22);
             this.refreshServerOnSelect.Text = "Refresh Server On Select";
+            // 
+            // autoscan
+            // 
+            this.autoscan.Checked = true;
+            this.autoscan.CheckOnClick = true;
+            this.autoscan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.autoscan.Name = "autoscan";
+            this.autoscan.Size = new System.Drawing.Size(231, 22);
+            this.autoscan.Text = "Auto scan servers on add";
             // 
             // nofilters
             // 
@@ -409,8 +418,6 @@ namespace Cod4ServerTool
             // pingcheck
             // 
             this.pingcheck.AutoSize = true;
-            this.pingcheck.Checked = true;
-            this.pingcheck.CheckState = System.Windows.Forms.CheckState.Checked;
             this.pingcheck.Location = new System.Drawing.Point(3, 170);
             this.pingcheck.Name = "pingcheck";
             this.pingcheck.Size = new System.Drawing.Size(128, 17);
@@ -519,15 +526,6 @@ namespace Cod4ServerTool
             this.filterpanel.Name = "filterpanel";
             this.filterpanel.Size = new System.Drawing.Size(200, 501);
             this.filterpanel.TabIndex = 8;
-            // 
-            // autoscan
-            // 
-            this.autoscan.Checked = true;
-            this.autoscan.CheckOnClick = true;
-            this.autoscan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.autoscan.Name = "autoscan";
-            this.autoscan.Size = new System.Drawing.Size(231, 22);
-            this.autoscan.Text = "Auto scan servers on add";
             // 
             // scanselected
             // 

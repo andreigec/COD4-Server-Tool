@@ -110,7 +110,7 @@ namespace Protocol
         {
             long start = DateTime.Now.Ticks;
 
-            byte[] rec =   NetUpdates.SendUDPPacketGetBlockingResponse(address, port, data);
+            byte[] rec =   Networking.SendUDPPacketGetBlockingResponse(address, port, data);
 
             if (rec == null)
                 return null;

@@ -11,3 +11,11 @@ C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Debug\Protocol.pdb
 C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ANDREICSLIB.dll
 C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\Andrei\Projects\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ANDREICSLIB.pdb
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Debug\Protocol.csprojResolveAssemblyReference.cache
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Debug\Protocol.dll
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\Protocol.dll
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\Protocol.pdb
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ANDREICSLIB.dll
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\bin\Debug\ANDREICSLIB.pdb
+C:\Users\andrei.gec\Downloads\ss\GIT\COD4-Server-Tool\SOURCE\Protocol\obj\Debug\Protocol.pdb

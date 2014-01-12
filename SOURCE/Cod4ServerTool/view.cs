@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using ANDREICSLIB;
+using Cod4ServerTool.ServiceReference1;
 using Protocol;
 
 namespace Cod4ServerTool
@@ -16,13 +17,8 @@ namespace Cod4ServerTool
         #region licensing
 
         private const string AppTitle = "COD4 Server Tool";
-        private const double AppVersion = 1.1;
+        private const double AppVersion = 1.2;
         private const String HelpString = "";
-
-        private const String RepoName = "COD4-Server-Tool";
-        private const String UpdatePath = "https://github.com/EvilSeven/" + RepoName + "/zipball/master";
-        private const String VersionPath = "https://raw.github.com/EvilSeven/" + RepoName + "/master/INFO/version.txt";
-        private const String ChangelogPath = "https://raw.github.com/EvilSeven/" + RepoName + "/master/INFO/changelog.txt";
 
         private readonly String OtherText =
             @"©" + DateTime.Now.Year +
@@ -32,11 +28,12 @@ Licensed under GNU LGPL (http://www.gnu.org/)
 
 Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
 ";
+
         #endregion
 
-        private ListViewSorter lvs = new ListViewSorter();
-        public String gamelocation = "COD4STgameLocation.txt";
+        private readonly ListViewSorter lvs = new ListViewSorter();
         public String configlocation = "COD4STcfg.txt";
+        public String gamelocation = "COD4STgameLocation.txt";
 
         public Protocol.Protocol protocolInstance = new Protocol.Protocol();
         public String serverlistfile = "COD4STserverList.txt";
@@ -84,26 +81,26 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                 savethese2.Add(noservers);
                 savethese2.Add(autoscan);
 
-                if (nofilters.Checked==false)
+                if (nofilters.Checked == false)
                 {
                     savethese1.AddRange(filterpanel.Controls.OfType<CheckBox>().Cast<Control>().ToList());
                 }
 
-                if (noservers.Checked==false)
+                if (noservers.Checked == false)
                 {
                     serversInstance.serialise(serverlistfile);
                 }
             }
 
-            if (dontsave.Checked||noservers.Checked)
+            if (dontsave.Checked || noservers.Checked)
             {
                 if (File.Exists(serverlistfile))
-                    File.Delete(serverlistfile);  
+                    File.Delete(serverlistfile);
             }
 
             FormConfigRestore.SaveConfig(this, configlocation, savethese1, savethese2, savethese3);
         }
-        
+
         private void view_Load(object sender, EventArgs e)
         {
             serverview.ListViewItemSorter = lvs;
@@ -135,9 +132,37 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             //apply the loaded filters to all the servers
             allServersToServerView();
 
-            controller.toolStripText(toolStripStatusLabel1, ref statusStrip1, "Ready");
+            Controller.ToolStripText(toolStripStatusLabel1, ref statusStrip1, "Ready");
 
-            Licensing.CreateLicense(this, HelpString, AppTitle, AppVersion, OtherText, VersionPath, UpdatePath, ChangelogPath, menuStrip1);
+            Licensing.CreateLicense(this, menuStrip1, new Licensing.SolutionDetails(GetDetails, HelpString, AppTitle, AppVersion, OtherText));
+           
+        }
+
+        public Licensing.DownloadedSolutionDetails GetDetails()
+        {
+            try
+            {
+                var sr = new ServicesClient();
+                var ti = sr.GetTitleInfo(AppTitle);
+                if (ti == null)
+                    return null;
+                return ToDownloadedSolutionDetails(ti);
+
+            }
+            catch (Exception)
+            {
+            }
+            return null;
+        }
+
+        public static Licensing.DownloadedSolutionDetails ToDownloadedSolutionDetails(TitleInfoServiceModel tism)
+        {
+            return new Licensing.DownloadedSolutionDetails()
+            {
+                ZipFileLocation = tism.LatestTitleDownloadPath,
+                ChangeLog = tism.LatestTitleChangelog,
+                Version = tism.LatestTitleVersion
+            };
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,7 +174,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveConfig();
-            
+
             if (threadsInstance != null)
                 threadsInstance.killThreads = true;
         }
@@ -168,7 +193,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                     {
                         Server s = serversInstance.masterServers[LVI.Name];
                         protocolInstance.updateServerInfo(s, Protocol.Protocol.basic);
-                        controller.updateServerInServerView(s, serverview);
+                        Controller.UpdateServerInServerView(s, serverview);
                     }
                 }
             }
@@ -243,7 +268,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             else
                 viewServerInformationToolStripMenuItem.Enabled = false;
 
-            int col = controller.getColumnIndex(serverview.Columns, Protocol.Protocol.favouriteSTR);
+            int col = Controller.GetColumnIndex(serverview.Columns, Protocol.Protocol.favouriteSTR);
             bool allowUnFav = false;
             bool allowFav = false;
 
@@ -271,12 +296,12 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
 
         private void favouriteselected_Click(object sender, EventArgs e)
         {
-            controller.updateFavourite(serverview, serversInstance, true);
+            Controller.UpdateFavourite(serverview, serversInstance, true);
         }
 
         private void unfavouriteselected_Click(object sender, EventArgs e)
         {
-            controller.updateFavourite(serverview, serversInstance, false);
+            Controller.UpdateFavourite(serverview, serversInstance, false);
         }
 
         private void refreshAllToolStripMenuItem_Click(object sender, EventArgs e)
@@ -294,7 +319,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
         {
             if (serverview.SelectedItems.Count == 1)
             {
-                controller.refreshselected(serverview, protocolInstance, serversInstance);
+                Controller.Refreshselected(serverview, protocolInstance, serversInstance);
             }
             else if (serverview.SelectedItems.Count > 1)
             {
@@ -312,7 +337,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             if (serverview.SelectedItems.Count != 1)
                 return;
 
-            controller.connecttoserver(serverview.SelectedItems[0].Name, gamelocation);
+            Controller.Connecttoserver(serverview.SelectedItems[0].Name, gamelocation);
             resetDirectory();
         }
 
@@ -338,8 +363,8 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
 
                 try
                 {
-                    controller.addServerToServerView(s, serverview);
-                    controller.updateServerInServerView(s, serverview);
+                    Controller.AddServerToServerView(s, serverview);
+                    Controller.UpdateServerInServerView(s, serverview);
                     serverview.SelectedItems.Clear();
                     serverview.Items[kkey].Selected = true;
                     serverview.EnsureVisible(serverview.Items[kkey].Index);
@@ -351,7 +376,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                     serverview.EnsureVisible(serverview.Items[kkey].Index);
                 }
 
-                controller.refreshselected(serverview, protocolInstance, serversInstance);
+                Controller.Refreshselected(serverview, protocolInstance, serversInstance);
             }
             catch
             {
@@ -363,7 +388,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
         {
             threadsInstance.killThreads = false;
 
-            controller.serversFromURL(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance, serverview,
+            Controller.ServersFromUrl(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance, serverview,
                                       this);
 
             resetDirectory();
@@ -373,7 +398,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
         {
             threadsInstance.killThreads = false;
 
-            controller.serversFromFile(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance, serverview,
+            Controller.ServersFromFile(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance, serverview,
                                        this);
 
             resetDirectory();
@@ -385,16 +410,16 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             if (serverview.SelectedItems.Count != 1)
                 return;
 
-            var EI = new extraInfo(this);
-            EI.thisServer = serversInstance.masterServers[serverview.SelectedItems[0].Name];
+            var EI = new ExtraInfo(this);
+            EI.ThisServer = serversInstance.masterServers[serverview.SelectedItems[0].Name];
             EI.Show();
 
-            controller.updateServerInServerView(EI.thisServer, serverview);
+            Controller.UpdateServerInServerView(EI.ThisServer, serverview);
         }
 
         private void deleteSelectedToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controller.deleteSelected(serverview, serversInstance);
+            Controller.DeleteSelected(serverview, serversInstance);
         }
 
         private void serverview_KeyPress(object sender, KeyPressEventArgs e)
@@ -415,22 +440,22 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             //delete
             if (e.KeyValue == 46)
             {
-                controller.deleteSelected(serverview, serversInstance);
+                Controller.DeleteSelected(serverview, serversInstance);
             }
         }
 
         private void addServersFromCOD4MasterServerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controller.masterServerAdd(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance);
+            Controller.MasterServerAdd(toolStripStatusLabel1, statusStrip1, serversInstance, threadsInstance);
             allServersToServerView();
-            
+
             if (autoscan.Checked)
-            rescanAllServers();
+                rescanAllServers();
         }
 
         private void ResetColours(List<Control> controls, Color force = default(Color))
         {
-            foreach (var c in controls)
+            foreach (Control c in controls)
             {
                 c.BackColor = force;
             }
@@ -473,7 +498,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
             int max = serversInstance.masterServers.Values.Count;
             foreach (Server s in serversInstance.masterServers.Values)
             {
-                controller.toolStripText(toolStripStatusLabel1, ref statusStrip1,
+                Controller.ToolStripText(toolStripStatusLabel1, ref statusStrip1,
                                          "Adding server " + count + "/" + max.ToString());
                 count++;
                 if (inactivecheck.Checked == false && s.getVariable(Protocol.Protocol.pingSTR) == null)
@@ -492,22 +517,25 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
 
                 if (latencycheck.Checked &&
                     (s.getVariable(Protocol.Protocol.pingSTR) == null ||
-                     (controller.getLatencyDrop(latencydrop) < Int32.Parse(s.getVariable(Protocol.Protocol.pingSTR)))))
+                     (Controller.GetLatencyDrop(latencydrop) < Int32.Parse(s.getVariable(Protocol.Protocol.pingSTR)))))
                 {
                     ContinueHit(continueHit, latencycheck);
                     continue;
                 }
 
                 if (punkbustercheck.Checked == false &&
-                    (s.getVariable(Protocol.Protocol.punkBusterSTR) == null || s.getVariable(Protocol.Protocol.punkBusterSTR) == "1"))
+                    (s.getVariable(Protocol.Protocol.punkBusterSTR) == null ||
+                     s.getVariable(Protocol.Protocol.punkBusterSTR) == "1"))
                 {
                     ContinueHit(continueHit, punkbustercheck);
                     continue;
                 }
 
                 if (pingcheck.Checked == false &&
-                    (s.getVariable(Protocol.Protocol.maxPingSTR) == null || s.getVariable(Protocol.Protocol.pingSTR) == null ||
-                     (Int32.Parse(s.getVariable(Protocol.Protocol.pingSTR)) > Int32.Parse(s.getVariable(Protocol.Protocol.maxPingSTR)))))
+                    (s.getVariable(Protocol.Protocol.maxPingSTR) == null ||
+                     s.getVariable(Protocol.Protocol.pingSTR) == null ||
+                     (Int32.Parse(s.getVariable(Protocol.Protocol.pingSTR)) >
+                      Int32.Parse(s.getVariable(Protocol.Protocol.maxPingSTR)))))
                 {
                     ContinueHit(continueHit, pingcheck);
                     continue;
@@ -521,7 +549,8 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                     continue;
                 }
 
-                if (s.getVariable(Protocol.Protocol.clientsSTR) != null && s.getVariable(Protocol.Protocol.maxClientsSTR) != null)
+                if (s.getVariable(Protocol.Protocol.clientsSTR) != null &&
+                    s.getVariable(Protocol.Protocol.maxClientsSTR) != null)
                 {
                     if (allowfullcheck.Checked == false &&
                         Int32.Parse(s.getVariable(Protocol.Protocol.clientsSTR)) >=
@@ -531,7 +560,8 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                         continue;
                     }
 
-                    if (allowemptycheck.Checked == false && Int32.Parse(s.getVariable(Protocol.Protocol.clientsSTR)) <= 0)
+                    if (allowemptycheck.Checked == false &&
+                        Int32.Parse(s.getVariable(Protocol.Protocol.clientsSTR)) <= 0)
                     {
                         ContinueHit(continueHit, allowemptycheck);
                         continue;
@@ -552,18 +582,18 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
                 }
 
 
-                controller.addServerToServerView(s, serverview);
+                Controller.AddServerToServerView(s, serverview);
             }
-            ListViewUpdate.AutoResize(serverview);
-            controller.toolStripText(toolStripStatusLabel1, ref statusStrip1, "Ready");
+            ListViewExtras.AutoResize(serverview);
+            Controller.ToolStripText(toolStripStatusLabel1, ref statusStrip1, "Ready");
             lvs.Enabled = true;
             SetColours(continueHit, serversInstance.masterServers.Values.Count);
-            if (mapdrop.Items.Count>0&&mapdrop.Text=="")
+            if (mapdrop.Items.Count > 0 && mapdrop.Text == "")
             {
                 mapdrop.Text = mapdrop.Items[0].ToString();
             }
 
-            if (gametypedrop.Items.Count>0&&gametypedrop.Text=="")
+            if (gametypedrop.Items.Count > 0 && gametypedrop.Text == "")
             {
                 gametypedrop.Text = gametypedrop.Items[0].ToString();
             }
@@ -577,7 +607,7 @@ Zip Assets © SharpZipLib (http://www.sharpdevelop.net/OpenSource/SharpZipLib/)
         private void scanselected_Click(object sender, EventArgs e)
         {
             threadsInstance.updateAllServersThread(this, serverview, toolStripStatusLabel1, statusStrip1,
-                                                  serversInstance, protocolInstance,false,true);
+                                                   serversInstance, protocolInstance, false, true);
 
             allServersToServerView();
         }

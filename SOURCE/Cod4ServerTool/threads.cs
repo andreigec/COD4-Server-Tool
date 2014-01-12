@@ -57,7 +57,7 @@ namespace Cod4ServerTool
                     updateList.Add(LVI.Name);
                 }
             }
-                //refresh all in server view
+            //refresh all in server view
             else if (selectedOnly == false && serverViewOnly)
             {
                 max = serverView.Items.Count;
@@ -66,7 +66,7 @@ namespace Cod4ServerTool
                     updateList.Add(LVI.Name);
                 }
             }
-                //otherwise refresh all in database
+            //otherwise refresh all in database
             else
             {
                 max = serversInstance.masterServers.Keys.Count;
@@ -81,7 +81,7 @@ namespace Cod4ServerTool
                 if (selectedOnly && serverViewOnly == false && serverView.Items.ContainsKey(s) == false)
                     continue;
 
-                retry:
+            retry:
                 if (killThreads)
                     break;
 
@@ -108,7 +108,7 @@ namespace Cod4ServerTool
                                                  protocolInstance, s));
                 t.Start();
 
-                controller.toolStripText(toolStripLabel, ref SS, "Updating " + count.ToString() + "/" + max.ToString());
+                Controller.ToolStripText(toolStripLabel, ref SS, "Updating " + count.ToString() + "/" + max.ToString());
                 count++;
             }
 
@@ -117,12 +117,13 @@ namespace Cod4ServerTool
                 Thread.Sleep(100);
             }
 
-            controller.toolStripText(toolStripLabel, ref SS, "Ready");
+            Controller.ToolStripText(toolStripLabel, ref SS, "Ready");
             killThreads = false;
         }
 
         private void updateListServerViewThread(view baseView, ListView serverView, ToolStripLabel toolStripLabel,
-                                                StatusStrip SS, Servers serversInstance, Protocol.Protocol protocolInstance,
+                                                StatusStrip SS, Servers serversInstance,
+                                                Protocol.Protocol protocolInstance,
                                                 String ipport)
         {
             if (baseView.serversInstance.masterServers.ContainsKey(ipport) == false)
@@ -130,7 +131,7 @@ namespace Cod4ServerTool
 
             Server serv = baseView.serversInstance.masterServers[ipport];
             protocolInstance.updateServerInfo(serv, Protocol.Protocol.basic);
-            controller.updateServerInServerView(serv, serverView);
+            Controller.UpdateServerInServerView(serv, serverView);
             changeCurrThread(-1, true);
         }
 
@@ -162,14 +163,14 @@ namespace Cod4ServerTool
             }
             catch
             {
-                controller.toolStripText(toolStripLabel, ref SS, "Ready");
+                Controller.ToolStripText(toolStripLabel, ref SS, "Ready");
                 return;
             }
 
             int count = 0;
             foreach (Match m in mc)
             {
-                retry:
+            retry:
                 if (killThreads)
                     break;
 
@@ -179,7 +180,7 @@ namespace Cod4ServerTool
                     goto retry;
                 }
 
-                controller.toolStripText(toolStripLabel, ref SS,
+                Controller.ToolStripText(toolStripLabel, ref SS,
                                          "Verifying/Adding Server:" + count.ToString() + "/" + mc.Count);
                 KeyValuePair<String, String> coll = Server.getIpPort(m.ToString());
 
@@ -199,16 +200,16 @@ namespace Cod4ServerTool
         {
             var s = new Server();
 
-            IPAddress address = NetUpdates.GetIPFromHostname(ip);
+            IPAddress address = NetExtras.HostnameToIP(ip);
             changeCurrThread(-1, true);
             if (address == null)
                 return null;
 
             s.setVariable(Protocol.Protocol.ipAddressSTR, ip);
             s.setVariable(Protocol.Protocol.portSTR, port.ToString());
-            var ipport = ip + Server.separator + port;
+            string ipport = ip + Server.separator + port;
 
-            if (port > 0 &&serversInstance.masterServers.ContainsKey(ipport) ==false)
+            if (port > 0 && serversInstance.masterServers.ContainsKey(ipport) == false)
             {
                 try
                 {

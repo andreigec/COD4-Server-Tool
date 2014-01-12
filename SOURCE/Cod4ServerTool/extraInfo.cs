@@ -6,13 +6,15 @@ using Protocol;
 
 namespace Cod4ServerTool
 {
-    public partial class extraInfo : Form
+    public partial class ExtraInfo : Form
     {
+        private static ListViewSorter _lvsPlayers = new ListViewSorter();
+        private static ListViewSorter _lvsExtra= new ListViewSorter();
         private readonly view baseView;
 
-        public Server thisServer;
+        public Server ThisServer;
 
-        public extraInfo(view newBaseView)
+        public ExtraInfo(view newBaseView)
         {
             InitializeComponent();
             baseView = newBaseView;
@@ -20,20 +22,20 @@ namespace Cod4ServerTool
 
         private void update(String[] split)
         {
-            var ip = thisServer.getVariable(Protocol.Protocol.ipAddressSTR);
-            var port = thisServer.getVariable(Protocol.Protocol.portSTR);
-            var hostname = thisServer.getVariable(Protocol.Protocol.hostNameSTR);
-            var mapname = thisServer.getVariable(Protocol.Protocol.mapNameSTR);
-            var clients = thisServer.getVariable(Protocol.Protocol.clientsSTR);
-            var maxclients = thisServer.getVariable(Protocol.Protocol.maxClientsSTR);
-            var gametype = thisServer.getVariable(Protocol.Protocol.gameTypeSTR);
-            var pb = thisServer.getVariable(Protocol.Protocol.punkBusterSTR);
-            var maxping = thisServer.getVariable(Protocol.Protocol.maxPingSTR);
-            var ping = thisServer.getVariable(Protocol.Protocol.pingSTR);
+            string ip = ThisServer.getVariable(Protocol.Protocol.ipAddressSTR);
+            string port = ThisServer.getVariable(Protocol.Protocol.portSTR);
+            string hostname = ThisServer.getVariable(Protocol.Protocol.hostNameSTR);
+            string mapname = ThisServer.getVariable(Protocol.Protocol.mapNameSTR);
+            string clients = ThisServer.getVariable(Protocol.Protocol.clientsSTR);
+            string maxclients = ThisServer.getVariable(Protocol.Protocol.maxClientsSTR);
+            string gametype = ThisServer.getVariable(Protocol.Protocol.gameTypeSTR);
+            string pb = ThisServer.getVariable(Protocol.Protocol.punkBusterSTR);
+            string maxping = ThisServer.getVariable(Protocol.Protocol.maxPingSTR);
+            string ping = ThisServer.getVariable(Protocol.Protocol.pingSTR);
 
 
             extra.Items.Clear();
-            serveriptext.Text =ip+Server.separator+port;
+            serveriptext.Text = ip + Server.separator + port;
             hostnametext.Text = hostname;
             mapnametext.Text = mapname;
 
@@ -55,8 +57,8 @@ namespace Cod4ServerTool
 
             for (int a = 0; a < split.Length; a += 2)
             {
-                String s = split[a];
-                String s2 = split[a + 1];
+                var s = split[a];
+                var s2 = split[a + 1];
 
                 //check if players
                 var r = new Regex(@"[0-9]+\n");
@@ -64,7 +66,6 @@ namespace Cod4ServerTool
                 if (M.Length != 0)
                 {
                     string[] z = Regex.Split(s2, @"[0-9]+\n");
-                    s2 = s2.Substring(0, s2.IndexOf('\n'));
                     var seps = new string[1];
                     seps[0] = "\n";
                     string[] players = z[1].Split(seps, StringSplitOptions.RemoveEmptyEntries);
@@ -108,13 +109,15 @@ namespace Cod4ServerTool
 
         private void updateServer()
         {
-            string[] args = baseView.protocolInstance.updateServerInfo(thisServer, Protocol.Protocol.extended);
+            string[] args = baseView.protocolInstance.updateServerInfo(ThisServer, Protocol.Protocol.extended);
 
             update(args);
         }
 
         private void extraInfo_Load(object sender, EventArgs e)
         {
+            playerlistview.ListViewItemSorter = _lvsPlayers;
+            extra.ListViewItemSorter = _lvsExtra;
             updateServer();
         }
 
@@ -125,8 +128,9 @@ namespace Cod4ServerTool
 
         private void connectbutton_Click(object sender, EventArgs e)
         {
-            controller.connecttoserver(thisServer.getServerIdentifier(Protocol.Protocol.ipAddressSTR, Protocol.Protocol.portSTR),
-                                       baseView.gamelocation);
+            Controller.Connecttoserver(
+                ThisServer.getServerIdentifier(Protocol.Protocol.ipAddressSTR, Protocol.Protocol.portSTR),
+                baseView.gamelocation);
             view.resetDirectory();
         }
 
@@ -135,13 +139,14 @@ namespace Cod4ServerTool
             updateServer();
         }
 
-        private void copyToClipboardToolStripMenuItem_Click(object sender, EventArgs e)
+        private void playerlistview_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            if (extra.SelectedItems.Count != 1)
-                return;
-
-            Clipboard.SetText(extra.SelectedItems[0].SubItems[1].Text);
+            ListViewSorter.ColumnSort(_lvsPlayers, playerlistview, e.Column);
         }
 
+        private void extra_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            ListViewSorter.ColumnSort(_lvsExtra, extra, e.Column);
+        }
     }
 }
