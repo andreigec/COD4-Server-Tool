@@ -1,7 +1,0 @@
-E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Debug\ResolveAssemblyReference.cache
-E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Debug\Protocol.dll
-E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Debug\Protocol.pdb
-E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Debug\Protocol.dll
-E:\Andrei\Projects\Cod4ServerTool\Protocol\obj\Debug\Protocol.pdb
-E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Debug\Server.dll
-E:\Andrei\Projects\Cod4ServerTool\Protocol\bin\Debug\Server.pdb
